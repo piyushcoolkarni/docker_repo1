@@ -1,0 +1,6 @@
+FROM www.cybage-docker-registry.com:9080/ubuntu
+
+RUN apt-get update
+RUN apt-get install npm 
+RUN apt-get install node
+EXPOSE 4244 

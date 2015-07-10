@@ -1,0 +1,20 @@
+<html ng-app="myapp" >
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body ng-controller="simpController">
+Enter your name :<input type="text" ng-model="name">
+</br>
+
+<div ng-repeat="cust in customer | filter:name">
+<ul>
+<li>{{ cust.Pname }} ====>  {{ cust.Department }} </li>
+</ul>
+</div>
+
+<script src="./controller.js"></script>
+
+
+
+</body>
+</html>
